@@ -82,7 +82,7 @@ void loop() {
     motorA.setSpeed(pwmPitch);
     motorB.setSpeed(pwmRoll);
 
-    // --- отладка ---
+    // --- отладка ---g
     Serial.print("Roll: "); Serial.print(roll, 3);
     Serial.print("\t Pitch: "); Serial.print(pitch, 3);
     Serial.print("\t pwmRoll: "); Serial.print(pwmRoll);
@@ -90,4 +90,4 @@ void loop() {
 
     delay(10);
   }
-}
+}r
