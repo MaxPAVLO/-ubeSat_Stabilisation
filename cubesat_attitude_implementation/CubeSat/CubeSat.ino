@@ -20,8 +20,8 @@ Motor motorA(PWMA, AIN1, AIN2);
 Motor motorB(PWMB, BIN1, BIN2);
 
 // --- PID контроллеры для X и Y ---
-PID pidRoll(300, 1.0, 3.0, 0.01);  // kp, ki, kd, dt
-PID pidPitch(300, 1.0, 3.0, 0.01);
+PID pidRoll(600, 0.0, 35.0, 0.01);  // kp, ki, kd, dt
+PID pidPitch(600, 0.0, 35.0, 0.01);
 
 void setup() {
   Serial.begin(115200);
@@ -90,4 +90,4 @@ void loop() {
 
     delay(10);
   }
-}r
+}
